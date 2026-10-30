@@ -21,6 +21,14 @@ du skriver til Claude, Claudes svar, dine filer eller hvor de ligger.
 Log ind på InvoTrack, gå til **Mine AI-enheder → Tilføj enhed**, og følg vejledningen. AI-registrering
 skal først slås til af en administrator i din organisation.
 
+Udvidelsen opdaterer sig selv: vejledningen slår automatisk opdatering til for denne markedsplads
+(`"autoUpdate": true` under `extraKnownMarketplaces` i `~/.claude/settings.json`).
+
+## Udgiv en ny version
+
+Claude Code henter kun en ny kopi, når versionen skifter. Hæv `version` i både
+`plugins/invotrack/.claude-plugin/plugin.json` og `.claude-plugin/marketplace.json` ved hver ændring.
+
 ## Krav
 
 - Claude Code og en InvoTrack-konto.
