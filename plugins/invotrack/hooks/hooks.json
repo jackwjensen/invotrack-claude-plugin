@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "curl -s -f -X POST -H \"Authorization: Bearer $CLAUDE_PLUGIN_OPTION_DEVICE_TOKEN\" -H \"Content-Type: application/json\" --data-binary @- \"$CLAUDE_PLUGIN_OPTION_BASE_URL/api/activity/session-start\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

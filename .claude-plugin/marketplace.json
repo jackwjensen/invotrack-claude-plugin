@@ -1,0 +1,21 @@
+{
+  "name": "invotrack",
+  "owner": {
+    "name": "Allegro IT ApS",
+    "email": "kontakt@allegroit.dk"
+  },
+  "metadata": {
+    "description": "InvoTrack — tids- og AI-registrering fra Claude Code, klar til fakturering.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "invotrack",
+      "source": "./plugins/invotrack",
+      "description": "Registrér arbejdstid og AI-forbrug fra Claude Code i InvoTrack og fakturér det til kunden.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": ["invotrack", "time-tracking", "tidsregistrering", "invoicing", "fakturering", "ai", "freelance", "denmark"]
+    }
+  ]
+}

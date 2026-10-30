@@ -1,0 +1,28 @@
+{
+  "name": "invotrack",
+  "version": "1.0.0",
+  "description": "Registrér tid og AI-forbrug fra Claude Code i InvoTrack. Sender kun tidspunkter, mappe, session og tokenantal — aldrig det, du skriver.",
+  "author": {
+    "name": "Allegro IT ApS",
+    "email": "kontakt@allegroit.dk",
+    "url": "https://allegroit.dk"
+  },
+  "homepage": "https://invotrack.dk/dokumentation/ai-registrering",
+  "repository": "https://github.com/jackwjensen/invotrack-claude-plugin",
+  "keywords": ["invotrack", "time-tracking", "tidsregistrering", "invoicing", "fakturering", "ai", "freelance", "denmark"],
+  "userConfig": {
+    "device_token": {
+      "type": "string",
+      "title": "InvoTrack-enhedsnøgle",
+      "description": "Nøglen fra InvoTrack → Mine AI-enheder → Tilføj enhed.",
+      "required": true,
+      "sensitive": true
+    },
+    "base_url": {
+      "type": "string",
+      "title": "InvoTrack-adresse",
+      "description": "Adressen på din InvoTrack, uden skråstreg til sidst.",
+      "default": "https://invotrack.dk"
+    }
+  }
+}
