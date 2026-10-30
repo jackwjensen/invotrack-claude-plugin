@@ -1,7 +1,7 @@
 {
   "name": "invotrack",
-  "version": "1.0.0",
-  "description": "Registrér tid og AI-forbrug fra Claude Code i InvoTrack. Sender kun tidspunkter, mappe, session og tokenantal — aldrig det, du skriver.",
+  "version": "1.1.0",
+  "description": "Registrér tid og AI-forbrug fra Claude Code i InvoTrack. Sender kun tidspunkter, session og tokenantal — aldrig det, du skriver, eller hvor dine filer ligger.",
   "author": {
     "name": "Allegro IT ApS",
     "email": "kontakt@allegroit.dk",

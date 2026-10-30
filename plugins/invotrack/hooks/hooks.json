@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "curl -s -f -X POST -H \"Authorization: Bearer $CLAUDE_PLUGIN_OPTION_DEVICE_TOKEN\" -H \"Content-Type: application/json\" --data-binary @- \"$CLAUDE_PLUGIN_OPTION_BASE_URL/api/activity/session-start\"",
+            "command": "id=$(sed -n 's/.*\"session_id\"[[:space:]]*:[[:space:]]*\"\\([^\"]*\\)\".*/\\1/p' | head -n 1); curl -s -f -X POST -H \"Authorization: Bearer $CLAUDE_PLUGIN_OPTION_DEVICE_TOKEN\" -H \"Content-Type: application/json\" --data \"{\\\"session_id\\\":\\\"$id\\\"}\" \"$CLAUDE_PLUGIN_OPTION_BASE_URL/api/activity/session-start\"",
             "timeout": 10
           }
         ]
