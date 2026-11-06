@@ -5,16 +5,17 @@ Mål din arbejdstid og dit AI-forbrug i Claude Code — og fakturér det fra
 
 ## Sådan virker det
 
-Første gang du arbejder i en mappe, spørger Claude, hvilken opgave arbejdet hører til, og noterer
-svaret i mappens `CLAUDE.local.md` — kun på din computer. Næste gang registrerer Claude sessionen på
-samme opgave uden at spørge. InvoTrack måler, hvor længe du selv arbejder, og hvor meget AI Claude
+Når en session begynder, spørger Claude, hvilken opgave arbejdet hører til, og noterer mappens
+opgaver i mappens `CLAUDE.local.md` — kun på din computer. Næste gang tilbyder Claude den senest
+brugte opgave først, så et rigtigt gæt kun kræver et ja. InvoTrack måler, hvor længe du selv arbejder, og hvor meget AI Claude
 bruger, og Claude giver en kort beskrivelse af arbejdet. Med ét klik bliver det til
 tidsregistreringer og AI-forbrug på opgaven, klar til faktura.
 
 ## Kun metadata forlader din computer
 
-InvoTrack modtager tidspunkter, session, tokenantal og den korte beskrivelse af arbejdet. Aldrig det,
-du skriver til Claude, Claudes svar, dine filer eller hvor de ligger.
+InvoTrack modtager tidspunkter, session, tokenantal, den korte beskrivelse af arbejdet, og mappens
+projekt med en kort beskrivelse af sessionen, som Claude skriver med sine egne ord. Aldrig det, du
+skriver til Claude, Claudes svar, dine filer eller hvor de ligger.
 
 ## Installation
 
